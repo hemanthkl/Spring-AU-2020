@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	font-family: 'Roboto',sans-serif;
+	background: url(../img/nature.jpg);
+	background-size: cover;
+}
+.main-section{
+	width:400px;
+	margin:0 auto;
+	margin-top: 100px;
+	margin-left: 30px;
+	padding: 0;
+}
+.model-content{
+	background-color: rgba(255,255,255,0);
+	padding: 0 18px;
+	box-shadow: 3px 3px 3px #848484;
+}
+.user-img{
+	margin-top: -30px;
+	margin-bottom:35px;
+}
+.user-img img{
+	height: 100px;
+	width:100px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 3px #848484;
+}
+.form-group{
+	margin-bottom:25px;
+}
+.form-group input{
+	height:40px;
+	border-radius: 6px;
+	border:0;
+	font-size: 18px;
+	padding-left: 50px;
+}
+.form-group::before{
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f007";
+	position: absolute;
+	font-size: 22px;
+	color:#555e60;
+	left:28px;
+	padding-top: 4px;
+
+}
+.form-group:last-of-type::before
+{
+	content: "\f023";
+}
+button{
+	width:40%;
+	margin:5px 0 25px;
+}
+.btn{
+	background-color: rgba(0,200,0,0.3);
+	color: #fff;
+	font-size: 18px;
+	padding: 7px 14px;
+	border-radius: 5px;
+	border: 2px solid rgba(0,0,0,0.3);
+}
+.btn:hover,.btn:focus{
+	background-color: #25a890;
+	border:2px solid #25a890;
+}
+.svg-inline--fa{
+	font-size: 20px;
+	margin-right: 8px;
+
+}
+.forgot{
+	padding: 5px 0 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
