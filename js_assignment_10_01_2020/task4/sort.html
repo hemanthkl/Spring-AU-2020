@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/sort.js"></script>
+	<title>Form creation</title>
+	<style >
+		body{
+			background-image: url("img/back.jpg");
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	.form{
+		max-width: 500px;
+		margin: auto;
+		height: 500px;
+		border-radius: 6px;
+		background: rgba(200,200,200,0.3);
+		padding: 20px;
+	}
+	input[type=text],select{
+		width: 100%;
+		padding: 12px;
+		margin: 15px,8px;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		box-sizing: border-box;
+		background: #333;
+		color: white;
+		font-weight: bold;
+		margin-bottom: 10px;
+
+	}
+	input[type=submit]{
+		width: 100%;
+		background: white;
+		color: black;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+		font-weight: bold;
+
+	}
+	input[type=submit]:hover{
+		background: green;
+
+	}
+	input[type=button]{
+		width: 100%;
+		background: white;
+		color: black;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+		font-weight: bold;
+
+	}
+	input[type=button]:hover{
+		background: green;
+
+	}
+	.container{
+		width: 100%;
+		margin: 10px auto;
+		background: #333;
+		border-radius: 6px;
+		overflow: hidden;
+	}
+	.container input{
+		border: 0;
+		color: #fff;
+		font-size: 16px;
+		outline: none;
+
+	}
+	.suggestions{
+		border-top: 2px solid #999;
+	}
+	.suggestions > div{
+		padding: 15px;
+		font-size: 20px;
+		color: #fff;
+		border-top: 1px solid #666;
+		cursor: pointer;
+	}
+	.suggestions > div:hover{
+		background-color: #1e4dd4;
+	}.suggestions1{
+		border-top: 2px solid #999;
+	}
+	.suggestions1 > div{
+		padding: 15px;
+		font-size: 20px;
+		color: #fff;
+		border-top: 1px solid #666;
+		cursor: pointer;
+	}
+	.suggestions1 > div:hover{
+		background-color: #1e4dd4;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="form">
+		<form>
+		<label for="Name">Name : </label>
+		<input type="text" id="a" placeholder="Enter your Name..">
+		<label for="Country">Country</label>
+		<select id="Country">
+			<option value="Country">Select Country</option>
+			<option value="Australia">Australia</option>
+			<option value="Cuba">Cuba</option>
+			<option value="India">India</option>
+			<option value="USA">USA</option>
+
+		</select>
+		<label for="Username">Username</label>
+		
+		<div class="container">
+
+			<input type="text" id="search-input" placeholder="Enter Username" onkeyup="return li()">
+			<div class="suggestions">				
+			</div>
+		</div>
+
+
+		<input type="submit" value="submit">
+		<input type="button" value="sort" onclick ="return l2()" id="qq">
+		<div class="container">
+			<div class="suggestions1">
+			</div>
+
+		</div>
+		
+
+		
+		</form>
+	</div>
+	
+</body>
+</html>

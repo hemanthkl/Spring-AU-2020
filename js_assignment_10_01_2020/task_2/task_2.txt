@@ -1,0 +1,5 @@
+\r - returns cursor to beginning of same line
+\n - returns cursor to beginning of next line
+
+But again it is os and shell dependent
+screenshot showing difference between \r and \n is attached
