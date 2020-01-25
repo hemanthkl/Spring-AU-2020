@@ -1,0 +1,53 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+<bean id="emp_1" class="model.Employee">
+<property name="emp_id" value="101"></property>
+<property name="emp_name" value="Hemanth"></property>
+</bean>
+<bean id="emp_2" class="model.Employee">
+<property name="emp_id" value="102"></property>
+<property name="emp_name" value="Manish"></property>
+</bean>
+<bean id="emp_3" class="model.Employee">
+<property name="emp_id" value="103"></property>
+<property name="emp_name" value="Kirthi"></property>
+</bean>
+<bean id="emp_4" class="model.Employee">
+<property name="emp_id" value="104"></property>
+<property name="emp_name" value="Mahantesh"></property>
+</bean>
+<bean id="emp_5" class="model.Employee">
+<property name="emp_id" value="105"></property>
+<property name="emp_name" value="Prachi"></property>
+</bean>
+<bean id="emp_6" class="model.Employee">
+<property name="emp_id" value="106"></property>
+<property name="emp_name" value="Rakshith"></property>
+</bean>
+<bean id="emp_7" class="model.Employee">
+<property name="emp_id" value="107"></property>
+<property name="emp_name" value="Bhagi"></property>
+</bean>
+<bean id="emp_map" class="model.EmployeeMap">
+        <property name="emp_map">
+            <map>
+                <entry key="101" value-ref="emp_1" />
+                <entry key="102" value-ref="emp_2" />
+                <entry key="103" value-ref="emp_3" />
+                <entry key="104" value-ref="emp_4" />
+                <entry key="105" value-ref="emp_5" />
+                <entry key="106" value-ref="emp_6" />
+                <entry key="107" value-ref="emp_7" />
+            </map>
+      </property>
+</bean>
+
+
+</beans>
